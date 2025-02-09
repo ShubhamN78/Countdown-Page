@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7f9fc;
+    color: #333;
+}
+
+nav {
+    background-color: #475569;
+    padding: 15px 0;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+nav .menu-icon {
+    display: none;
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+nav .menu-icon i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+nav .nav-links ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .nav-links ul li {
+    margin: 0 15px;
+}
+
+nav .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .nav-links ul li a:hover {
+    color: #FFD700; 
+}
+
+#countdown {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f3f4f6;
+}
+
+#countdown-timer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#countdown-timer p {
+    font-size: 2rem;
+    margin: 0 10px;
+}
+
+#countdown-timer span {
+    font-size: 1.2rem;
+    margin-left: 5px;
+}
+
+#rsvp {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#rsvp form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#rsvp label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+#rsvp input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#rsvp button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#rsvp button:hover {
+    background-color: #45a049;
+}
+
+#about {
+    padding: 50px 20px;
+    background-color: #f3f4f6;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    background-color: #475569;
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    nav .menu-icon {
+        display: block;
+    }
+
+    nav .nav-links {
+        display: none;
+        width: 100%;
+        background-color: #475569;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    nav .nav-links ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav .nav-links ul li {
+        margin: 10px 0;
+    }
+
+    nav .nav-links.active {
+        display: block;
+    }
+}
